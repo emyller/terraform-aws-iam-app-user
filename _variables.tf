@@ -11,3 +11,9 @@ variable "allow_policies" {
   }))
   default = {}
 }
+
+variable "external_policies" {
+  description = "A map of existing policies to attach to the user."
+  type = map(string)
+  default = {}
+}
